@@ -23,7 +23,7 @@ class App extends Component {
 
 
   render() {
-    const wordSearch = _.debounce((term) => {this.wordSearch(term)}, 350)
+    const wordSearch = _.debounce((term) => {this.wordSearch(term)}, 300)
     return(
       <div>
         <SeachBar onSearchTermChange={wordSearch} />
