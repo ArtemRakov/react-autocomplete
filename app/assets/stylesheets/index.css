@@ -4,6 +4,9 @@
   padding: 20px;
 }
 
+.autocomplete {
+  margin-top: 25px;
+}
 .link-api {
   text-decoration: none;
   color: #DC291B;
