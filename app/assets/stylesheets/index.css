@@ -1,4 +1,14 @@
 .text {
-  margin-top: 50px !important;
+  margin-top: 30px !important;
+  background-color:#F4F4F4;
+  padding: 20px;
+}
 
+.link-api {
+  text-decoration: none;
+  color: #DC291B;
+}
+
+.link-api:hover {
+  color: #DC291B;
 }
