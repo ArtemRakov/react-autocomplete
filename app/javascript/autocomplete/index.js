@@ -17,7 +17,11 @@ class App extends Component {
 
   wordSearch = (term) => {
     const url = `https://wagon-dictionary.herokuapp.com/autocomplete/${term}`
-    fetch(url).then(response => response.json().then((data) => {this.setState({words: data.words})}))
+    axios.get(url)
+      .then(function (response) {
+        console.log(response);
+      })
+    // fetch(url).then(response => response.json().then((data) => {this.setState({words: data.words})}))
     // this.setState({words: ['apple', 'orange']})
   }
 
