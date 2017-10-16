@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SeachBar from './components/search-bar';
@@ -26,10 +25,9 @@ class App extends Component {
 
 
   render() {
-    const wordSearch = _.debounce((term) => {this.wordSearch(term)}, 300)
     return(
       <div className="row">
-        <SeachBar onSearchTermChange={wordSearch} />
+        <SeachBar onSearchTermChange={this.wordSearch} />
         <Results count={this.state.results}/>
         <Words words={this.state.words} />
       </div>
