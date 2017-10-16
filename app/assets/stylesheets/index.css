@@ -1,11 +1,15 @@
 .text {
-  margin-top: 30px !important;
+  margin-top: 0px !important;
   background-color:#F4F4F4;
   padding: 20px;
 }
 
 .autocomplete {
   margin-top: 25px;
+}
+
+.autocomplete li {
+  font-size: 14px;
 }
 .link-api {
   text-decoration: none;
@@ -19,4 +23,16 @@
 .link-alex {
   font-size: 25px;
   text-decoration: none;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+.banner img {
+  height: 100px;
+}
+
+.footer {
+  height: 500px;
 }

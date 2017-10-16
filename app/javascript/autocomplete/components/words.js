@@ -3,7 +3,7 @@ import WordItem from './word-item';
 
 const Words = (props) => {
   if (!props.words) {
-    return <div> Start typing above... </div>
+    return <div>  </div>
   }
   const word = props.words.map((word => {
     return(
