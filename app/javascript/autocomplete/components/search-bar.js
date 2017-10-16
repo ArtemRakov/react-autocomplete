@@ -12,8 +12,11 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
+      <div className='eight column'>
+        <label>Autocomplete</label>
         <input
+          type='search'
+          className='u-full-width'
           value={this.state.term}
           onChange={event => this.onInputChange(event)}
           />
