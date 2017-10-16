@@ -10,8 +10,8 @@ const Results = (props) => {
     return <div> Found result: {props.count} </div>
   }
 
-  if (props.count === 15) {
-    return <div> Found results: {props.count} </div>
+  if (props.count <= 15) {
+    return <div> Found {props.count} results </div>
   }
 
   return (
